@@ -1,0 +1,28 @@
+.center-vertically-outer {
+    display: table;
+}
+
+/* + simple */
+/* - needs additional div */
+/* ? uses table */
+.center-vertically-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* + no need for additional div */
+/* - more rules */
+/* ? unprefixed version not supported (as of October 2016) */
+.center-outer {
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
